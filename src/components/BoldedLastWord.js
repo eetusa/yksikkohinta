@@ -20,12 +20,12 @@ const BoldedLastWord = ({sentence, idx}) => {
   return (
     <div>
         {idx === 0 && 
-            <p className='Result-p' key={idx}>
+            <p className='Result-p'>
                 <span>{first}</span><span>{last}</span>
             </p>
         }
         {idx !== 0 &&
-            <p className='Result-p' key={idx}>
+            <p className='Result-p'>
                 <span>{first}</span><span style={{fontWeight: "bold"}}>{last}</span>
             </p>
         }

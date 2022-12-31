@@ -10,7 +10,7 @@ const ResultField = ({data}) => {
     <div>
        
             {data.map((el, index) => {
-                return <BoldedLastWord idx={index} sentence={el}></BoldedLastWord>
+                return <BoldedLastWord key={index} idx={index} sentence={el}></BoldedLastWord>
             })}
         
 
