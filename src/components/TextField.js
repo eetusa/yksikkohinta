@@ -15,7 +15,7 @@ const TextField = ({input, onChange}) => {
             }}
                 value={input}
                 onChange={(e) => onChange(e)}></textarea> */}
-            <TextareaAutosize style={{width: "100%"}} value={input} onChange={(e) => onChange(e)}></TextareaAutosize>
+            <TextareaAutosize placeholder='Syötä kopioitu taulukko.' minRows={6} style={{width: "100%"}} value={input} onChange={(e) => onChange(e)}></TextareaAutosize>
         </div>
     )
 }
