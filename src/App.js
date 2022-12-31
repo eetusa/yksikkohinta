@@ -40,10 +40,15 @@ function App() {
                           <input type="checkbox" checked={ignore_every_other} onChange={() => setIgnore(!ignore_every_other)}></input>
                       </div>
                   </div>
-                  <div className='Right-side'>
-                
-                  </div>
+
               </div>
+              <div className='Right-side'>
+                    <p style={{textAlign: 'left'}}>Ohjeet:</p>
+                    <p style={{textAlign: 'left'}}>Anna antamastasi taulukosta pyydettyjen kolumnien numero.</p>
+                    <p style={{textAlign: 'left'}}>SW: Siirrä kolumnien nimet yhdelle riville. Jos kolumnin nimessä on kaksi tai useampi osa, kuten "Veroton hinta", muuta nimi yksiosaiseksi (esim. "Veroton hinta" -> "Veroton").</p>
+                    <p style={{textAlign: 'left'}}>I: Jos kolumni nimi yli yksiosainen, toimi kuten ylempänä. Ruksita "Jätä huomioimatta joka toinen rivi". (Toimii, jos jokaisella joka toisella rivillä on lisätietoja). </p>
+                    <p style={{textAlign: 'left'}}>SI: Toimii suoraan - älä koske edes kolumnien nimiin.</p>
+                  </div>
           </div>
 
 

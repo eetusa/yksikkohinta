@@ -27,6 +27,8 @@ const parse_normal = (master_data, unit_price_column_no, discount_column_no, ign
         if (ignore_every_other && i % 2 !== 0) {
             continue
         }
+        if (data[i].length === 0) continue
+
         let line = data[i].replace("EUR", '')
         line = line.replace(/\s+/g, ' ').trim().split(" ")
 
